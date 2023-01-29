@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <title>Dwarhaa</title>
+</head>
+<body>
+    <div class="dwarhh">
+        <div class="head">
+            <h2>El-Shekh_Management</h2>
+            <p>El-Shekh To Manage Your Store</p>
+        </div>
+        <div class="inputs">
+            <input placeholder="Title  / الاسم" id="title" type="text">
+            <div class="calc-price">
+                <input type="number" onclick="calcTotal()" onkeyup="calcTotal()" placeholder="price / السعر" id="price">
+                <input type="number" onclick="calcTotal()" onkeyup="calcTotal()" placeholder="taxes / ضرائب" id="taxes">
+                <input type="number" onclick="calcTotal()" onkeyup="calcTotal()" placeholder="ads / تكلفة الاعلانات" id="ads">
+                <input type="number" onclick="calcTotal()" onkeyup="calcTotal()" placeholder="discount / الخصم" id="discount">
+                <small id="total"></small>
+            </div>
+            <input placeholder="count / العدد" id="count" type="number">
+            <input placeholder="category / الصنف" id="category" type="text">
+            <button id="sub">Create</button>
+        </div>
+        <div class="outputs">
+            <div class="searchs">
+                <input type="text" onkeyup="searchDat(this.value)"  id="search" placeholder="Search / البحث">
+                <div class="btn-search">
+                    <button onclick="getmood(this.id)" id="searchTitle">Search By Title</button>
+                    <button onclick="getmood(this.id)" id="searchCatefory">Search By Categery</button>
+                </div>
+            </div>
+            <div id="deleta">
+            </div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>Total</th>
+                    <th>category</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+                <tbody id="tbody">
+           
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/js.js"></script>
+</body>
+</html>
