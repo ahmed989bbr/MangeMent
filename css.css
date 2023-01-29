@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #171d1d;
+    /* color: #88A47C; */
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.dwarhh{
+    width: 78%;
+    margin: auto;
+}
+.head {
+    text-align: center;
+    /* text-transform: uppercase; */
+    margin: 10px 0;
+}
+input{
+    width: 100%;
+    height: 23px;
+    outline: none;
+    border: none;
+    background: #36565e;
+    margin: 4px 0;
+    color: white;
+    border-radius: 5px;
+    direction: ltr;
+    padding: 4px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    -o-transform: scale(1.07);
+}
+input:focus{
+    background: black;
+    transform: scale(1.099);
+    -webkit-transform: scale(1.09999);
+    -moz-transform: scale(1.099);
+    -ms-transform: scale(1.099);
+    -o-transform: scale(1.099);
+}
+.calc-price input{
+    width: 18%;
+    margin: 1px 5PX;
+}
+#total{
+    background:#a00d02 ;
+    padding: 6px 8px;
+    margin-left: 2PX;
+    
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+#total::before{
+    content: "Total ";
+}
+button{
+    width: 100%;
+    height: 30PX;
+    border: none;
+    cursor: pointer;
+    background-color:#227C70 ;
+    background-color:#281c57 ;
+
+    color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+button:hover{
+    background-color:#289586 ;
+    background-color:#100a1e ;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.btn-search{
+    display: flex;
+    justify-content: space-between;
+
+}
+.btn-search button{
+    width: 45%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th {
+    text-transform: uppercase;
+
+}
+th,td {
+    padding: 5px;
+}
+#deleta{
+    margin: 20px 0;
+}
